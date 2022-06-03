@@ -15,6 +15,7 @@ import anchor from 'markdown-it-anchor'
 import LinkAttributes from 'markdown-it-link-attributes'
 import UnoCSS from 'unocss/vite'
 import SVG from 'vite-svg-loader'
+import { VitePWA } from 'vite-plugin-pwa'
 import { presetAttributify, presetIcons, presetUno } from 'unocss'
 // @ts-expect-error missing types
 import TOC from 'markdown-it-table-of-contents'
@@ -140,6 +141,35 @@ const config: UserConfig = {
           componentPrefix: '',
         }),
       ],
+    }),
+
+    // https://github.com/antfu/vite-plugin-pwa
+    VitePWA({
+      registerType: 'autoUpdate',
+      includeAssets: ['favicon.svg', 'robots.txt', 'safari-pinned-tab.svg'],
+      manifest: {
+        name: 'Vitesse',
+        short_name: 'Vitesse',
+        theme_color: '#ffffff',
+        icons: [
+          {
+            src: '/pwa-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: '/pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+          {
+            src: '/pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable',
+          },
+        ],
+      },
     }),
 
     Inspect(),
