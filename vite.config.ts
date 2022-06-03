@@ -168,8 +168,8 @@ const config: UserConfig = {
   },
 
   ssgOptions: {
-    script: 'async',
     formatting: 'minify',
+    format: 'cjs',
   },
 }
 
