@@ -82,3 +82,7 @@ h2 + p > em:first-child {
 html:not(.dark) [img-dark] {
   display: none;
 }
+
+.custom-font {
+  font-family: Kaiti SC,"Source Sans Pro",Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
