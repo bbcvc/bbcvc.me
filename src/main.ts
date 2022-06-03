@@ -30,9 +30,12 @@ const scrollBehavior = (to: any, from: any, savedPosition: any) => {
 export const createApp = ViteSSG(
   App,
   { routes, scrollBehavior },
-  ({ router, isClient }) => {
+  (ctx)=> {
+    const { router, isClient } = ctx
     dayjs.extend(LocalizedFormat)
 
+    Object.values(import.meta.globEager('./modules/*.ts')).map(i => i.install?.(ctx))
+    
     if (isClient) {
       router.beforeEach(() => { NProgress.start() })
       router.afterEach(() => { NProgress.done() })
