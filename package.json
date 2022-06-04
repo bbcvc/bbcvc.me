@@ -2,10 +2,9 @@
   "private": true,
   "packageManager": "pnpm@7.1.7",
   "scripts": {
-    "build": "npm run static && cross-env NODE_ENV=production vite-ssg build && cp _dist_redirects dist/_redirects",
+    "build": "cross-env NODE_ENV=production vite-ssg build",
     "dev": "vite --port 3333 --open",
     "preview": "vite preview",
-    "static": "rimraf temp && degit antfu/static temp --force",
     "redirects": "esno scripts/redirects.ts"
   },
   "dependencies": {
