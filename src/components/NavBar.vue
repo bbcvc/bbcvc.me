@@ -22,14 +22,14 @@ import { isDark } from '~/logics'
         <!-- <router-link to="/streams" class="lt-md:hidden" title="Streams">
           <div i-ri-vidicon-line />
         </router-link> -->
-        <router-link to="/demos" title="Demos">
-          <div class="i-ri-screenshot-line" />
+        <router-link to="/notes" title="Notes">
+          <div class="i-ri-sticky-note-line" />
         </router-link>
         <router-link to="/bookmarks" title="Bookmarks">
           <div class="i-ri-bookmark-line" />
         </router-link>
-        <router-link to="/notes" title="Notes">
-          <div class="i-ri-sticky-note-line" />
+        <router-link to="/demos" title="Demos">
+          <div class="i-ri-screenshot-line" />
         </router-link>
         <a href="https://twitter.com/Eric55718370" target="_blank" title="Twitter" class="lt-md:hidden">
           <feather-twitter />
