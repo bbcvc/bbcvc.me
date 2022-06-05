@@ -1,4 +1,3 @@
 ---
-title: bookmarks
-display: 书签
+title: 书签
 ---

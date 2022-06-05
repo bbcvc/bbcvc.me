@@ -1,6 +1,6 @@
 ---
 title: bbcvc
-display: 
+display: ''
 ---
 <ClientOnly>
   <Plum/>

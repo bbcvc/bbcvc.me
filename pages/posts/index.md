@@ -1,6 +1,6 @@
 ---
 title: bbcvc
-display: blog
+display: 技术相关
 ---
 
 
