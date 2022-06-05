@@ -148,8 +148,8 @@ const config: UserConfig = {
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'robots.txt', 'safari-pinned-tab.svg'],
       manifest: {
-        name: 'Vitesse',
-        short_name: 'Vitesse',
+        name: 'bbcvc blog',
+        short_name: 'blog',
         theme_color: '#ffffff',
         icons: [
           {
