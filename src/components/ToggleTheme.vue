@@ -7,7 +7,7 @@ function toggleDark() {
 
 watchEffect(() => {
   if (isDark.value) {
-    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#111111')
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#050505')
   } else {
     document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#ffffff')
   }
