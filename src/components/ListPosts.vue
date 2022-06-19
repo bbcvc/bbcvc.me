@@ -10,6 +10,8 @@ export interface Post {
   duration?: string
 }
 
+export type oPosts = Omit<Post, 'date'>
+
 const props = defineProps<{
   type?: string
   posts?: Post[]
@@ -29,6 +31,17 @@ const routes: Post[] = router.getRoutes()
   }))
 
 const posts = computed(() => (props.posts || routes).filter(i => !englishOnly.value || i.lang !== 'zh'))
+
+const oRoutes: oPosts[] = router.getRoutes()
+  .filter(i => (i.path.startsWith('/posts') && !i.meta.frontmatter.date))
+  .filter(i => !i.path.endsWith('.html') && i.meta.frontmatter.type === props.type)
+  .filter(i => i.name !== 'posts')
+  .map(i => ({
+    path: i.path,
+    title: i.meta.frontmatter.title,
+    lang: i.meta.frontmatter.lang,
+    duration: i.meta.frontmatter.duration,
+  }))
 </script>
 
 <template>
@@ -57,6 +70,21 @@ const posts = computed(() => (props.posts || routes).filter(i => !englishOnly.va
         </div>
         <div class="time opacity-50 text-sm -mt-1">
           {{ formatDate(route.date) }}
+          <span v-if="route.duration" class="opacity-50">· {{ route.duration }}</span>
+        </div>
+      </li>
+    </app-link>
+    <li v-if="oRoutes.length > 0">以前...</li>
+    <app-link
+      v-for="route in oRoutes" :key="route.path"
+      class="item block font-normal mb-6 mt-2 no-underline"
+      :to="route.path"
+    >
+      <li class="no-underline">
+        <div class="title text-lg">
+          {{ route.title }}
+        </div>
+        <div class="time opacity-50 text-sm -mt-1">
           <span v-if="route.duration" class="opacity-50">· {{ route.duration }}</span>
         </div>
       </li>
