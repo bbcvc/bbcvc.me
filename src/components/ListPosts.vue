@@ -45,7 +45,7 @@ const oRoutes: oPosts[] = router.getRoutes()
 </script>
 
 <template>
-  <ul>
+  <ul class="list-none">
     <template v-if="!posts.length">
       <div class="py2 op50">
         { nothing here yet }
@@ -74,7 +74,7 @@ const oRoutes: oPosts[] = router.getRoutes()
         </div>
       </li>
     </app-link>
-    <li v-if="oRoutes.length > 0">以前...</li>
+    <a class="no-underline list-none" v-if="oRoutes.length > 0">很久以前...</a>
     <app-link
       v-for="route in oRoutes" :key="route.path"
       class="item block font-normal mb-6 mt-2 no-underline"

@@ -45,3 +45,7 @@ ES Module以成为现在浏览器一个新的特性，主流浏览器都实现�
 
 兼容情况: [importmap](https://caniuse.com/?search=importmap)
 > 对于不支持 import-maps 的浏览器， 可以使用 es-module-shims 进行处理。
+
+<ClientOnly>
+  <Plum/>
+</ClientOnly>

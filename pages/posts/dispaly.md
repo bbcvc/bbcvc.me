@@ -1,7 +1,9 @@
 ---
-title: 一些常见的元素种类
-tag: css
+title: display设置小记
+tag: h5c3
 ---
+
+[[TOC]]
 
 ### 一. block 块元素
 特点：
@@ -47,3 +49,7 @@ tag: css
 > -   `flex:auto`等同于`flex:1 1 auto`；
 5. align-self: auto | flex-start | ...
 可控制单独一个子项在水平方向的排布
+
+<ClientOnly>
+  <Plum/>
+</ClientOnly>

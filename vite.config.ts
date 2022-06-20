@@ -52,7 +52,7 @@ const config: UserConfig = {
     UnoCSS({
       theme: {
         fontFamily: {
-          custom: 'Kaiti SC,"Source Sans Pro",Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"',
+          custom: 'Inter var,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color emoji',
         },
       },
       presets: [
@@ -117,7 +117,7 @@ const config: UserConfig = {
         })
 
         md.use(TOC, {
-          includeLevel: [1, 2, 3],
+          includeLevel: [1, 2, 3, 4, 5],
           slugify,
         })
       },
