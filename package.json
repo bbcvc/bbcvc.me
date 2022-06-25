@@ -69,5 +69,8 @@
     "overrides": {
       "@vueuse/head": "0.7.0"
     }
+  },
+  "engines": {
+    "node": "~14.18.2"
   }
 }
