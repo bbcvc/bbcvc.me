@@ -6,7 +6,7 @@ const { frontmatter } = defineProps({
     type: Object,
     required: true,
   },
-});
+})
 
 const router = useRouter()
 const route = useRoute()

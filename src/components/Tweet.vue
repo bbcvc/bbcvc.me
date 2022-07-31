@@ -4,7 +4,7 @@ import { isDark } from '../logics'
 
 if (isClient) {
   onMounted(() => {
-  // @ts-ignore
+  // @ts-expect-error allow-js
     window?.twttr.widgets.load()
   })
 }
