@@ -1,6 +1,10 @@
 ---
 title: 片断
 ---
+## git空提交 触发ci
+```bash
+git commit --allow-empty -m "empty commit"
+```
 
 ## 网页读取文件
 ```js
