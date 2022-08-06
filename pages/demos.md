@@ -1,6 +1,20 @@
 ---
 title: 片断
 ---
+## js的labal语句
+```js
+loop1:
+for (let i = 0; i < 5; i++) {
+  if (i === 1) {
+    continue loop1;
+  }
+  str = str + i;
+}
+```
+可实现类似于goto语句的效果
+
+MDN🔗：[MDN label statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label)
+
 ## git空提交 触发ci
 ```bash
 git commit --allow-empty -m "empty commit"
