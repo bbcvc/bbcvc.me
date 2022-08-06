@@ -11,13 +11,14 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00aba9">
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#111111" />
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@200;400;600&display=swap" rel="stylesheet" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@200;400;600&display=swap" rel="stylesheet" /> -->
     <title>bbcvc</title>
     <script>
       (function() {
         const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
         const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
-        if (setting === 'dark' || (prefersDark && setting !== 'light')) document.documentElement.classList.toggle('dark', true)
+        if (setting === 'dark' || (prefersDark && setting !== 'light'))
+    document.documentElement.classList.toggle('dark', true)
       })()
     </script>
   </head>

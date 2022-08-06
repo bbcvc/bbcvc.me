@@ -8,6 +8,7 @@ declare module '@vue/runtime-core' {
     DarkToggleButton: typeof import('./src/components/slides/DarkToggleButton.vue')['default']
     FeatherTwitter: typeof import('~icons/feather/twitter')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
+    Home: typeof import('./src/components/Home/Home.vue')['default']
     ListNotes: typeof import('./src/components/ListNotes.vue')['default']
     ListPosts: typeof import('./src/components/ListPosts.vue')['default']
     Marker: typeof import('./src/components/slides/Marker.vue')['default']
