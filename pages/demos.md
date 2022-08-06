@@ -1,8 +1,10 @@
 ---
 title: 片断
 ---
-## js的labal语句
+## js的label语句
 ```js
+let str = '';
+
 loop1:
 for (let i = 0; i < 5; i++) {
   if (i === 1) {
@@ -10,6 +12,9 @@ for (let i = 0; i < 5; i++) {
   }
   str = str + i;
 }
+
+console.log(str);
+// expected output: "0234"
 ```
 可实现类似于goto语句的效果
 
