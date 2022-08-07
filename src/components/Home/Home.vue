@@ -7,6 +7,7 @@ const { isFetching, error, data } = useFetch('https://v1.hitokoto.cn/').get().js
 
 <template>
   <div class="home">
+    <center>一言</center>
     <div class="font-bold">
       #{{ data?.from }}#
     </div>
