@@ -5,7 +5,6 @@
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AppLink: typeof import('./src/components/AppLink.vue')['default']
-    Bookmarks: typeof import('./src/components/ListBookmarks.vue')['default']
     DarkToggleButton: typeof import('./src/components/slides/DarkToggleButton.vue')['default']
     FeatherTwitter: typeof import('~icons/feather/twitter')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
