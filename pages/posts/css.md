@@ -45,18 +45,16 @@ data: 2022-08-11
 
 ## 6. 纯 css 实现三角形
 
-```
+```css
 // 通过设置border
-.box
-        {
-            width:0px;
-            height:0px;
-
-            border-top:50px solid rgba(0,0,0,0);
-            border-right:50px solid  rgba(0,0,0,0);
-            border-bottom:50px solid green;
-            border-left:50px solid  rgba(0,0,0,0);
-            }
+.box {
+    width:0px;
+    height:0px;
+    border-top:50px solid rgba(0,0,0,0);
+    border-right:50px solid  rgba(0,0,0,0);
+    border-bottom:50px solid green;
+    border-left:50px solid  rgba(0,0,0,0);
+  }
 ```
 
 ## 7. 高度不定，宽 100%，内一 div 高不确定，如何实现垂直居中？
@@ -82,7 +80,7 @@ data: 2022-08-11
 
 四个小圆点一直旋转
 
-```
+```css
 // 父标签
 animation: antRotate 1.2s infinite linear;
 // 子标签
@@ -102,7 +100,7 @@ animation: antSpin 1s infinite linear;
 
 ## 11. 关于 em
 
-```
+```html
  <div style="font-size: 20px">
       123
       <div style="font-size: 2em;width: 2em">456</div>
