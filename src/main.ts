@@ -35,8 +35,6 @@ export const createApp = ViteSSG(
     const { router, isClient } = ctx
     dayjs.extend(LocalizedFormat)
 
-    Object.values(import.meta.globEager('./modules/*.ts')).map(i => i.install?.(ctx))
-
     if (isClient) {
       router.beforeEach(() => { NProgress.start() })
       router.afterEach(() => { NProgress.done() })
