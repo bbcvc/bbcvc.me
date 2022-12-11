@@ -16,6 +16,7 @@ import LinkAttributes from 'markdown-it-link-attributes'
 import UnoCSS from 'unocss/vite'
 import SVG from 'vite-svg-loader'
 import { VitePWA } from 'vite-plugin-pwa'
+import { presetAttributify, presetIcons, presetUno } from 'unocss'
 // @ts-expect-error missing types
 import TOC from 'markdown-it-table-of-contents'
 import { slugify } from './scripts/slugify'
@@ -36,7 +37,20 @@ export default defineConfig({
     ],
   },
   plugins: [
-    UnoCSS(),
+    UnoCSS({
+      presets: [
+        presetIcons({
+          extraProperties: {
+            'display': 'inline-block',
+            'height': '1.2em',
+            'width': '1.2em',
+            'vertical-align': 'text-bottom',
+          },
+        }),
+        presetAttributify(),
+        presetUno(),
+      ],
+    }),
 
     Vue({
       include: [/\.vue$/, /\.md$/],
