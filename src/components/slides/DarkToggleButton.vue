@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { useToggle } from '@vueuse/core'
 import { isDark } from '~/logics'
-
 </script>
 
 <template>

@@ -38,6 +38,11 @@ export default defineConfig({
   },
   plugins: [
     UnoCSS({
+      theme: {
+        fontFamily: {
+          base: 'Hiragino Sans GB, Microsoft Yahei',
+        },
+      },
       presets: [
         presetIcons({
           extraProperties: {
