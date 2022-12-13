@@ -37,9 +37,9 @@ import { isDark } from '~/logics'
         <a href="https://github.com/bbcvc" target="_blank" title="GitHub" class="lt-md:hidden">
           <div class="i-uil-github-alt" />
         </a>
-        <!-- <a href="/feed.xml" target="_blank" title="RSS" class="lt-md:hidden">
+        <a href="/feed.xml" target="_blank" title="RSS" class="lt-md:hidden">
           <div class="i-la-rss-square" style="font-size:1.25rem; margin: 0 -0.125rem;" />
-        </a> -->
+        </a>
         <toggle-theme />
       </div>
     </nav>
