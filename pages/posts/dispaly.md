@@ -1,7 +1,7 @@
 ---
 title: display设置小记
 tag: h5c3
-data: 2022-08-12T16:00:00Z
+date: 2022-08-12T16:00:00Z
 ---
 
 [[TOC]]
