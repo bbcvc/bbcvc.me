@@ -49,6 +49,7 @@ const posts = computed(() => (props.notes || routes).filter(i => !englishOnly.va
           class="rounded-t-lg"
           :src="route.img"
           alt=""
+          loading="true"
           style="margin: 0;"
         >
       </app-lick>
