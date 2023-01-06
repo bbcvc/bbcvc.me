@@ -3,17 +3,17 @@ title: 片断
 ---
 ## js的label语句
 ```js
-let str = '';
+let str = ''
 
 loop1:
 for (let i = 0; i < 5; i++) {
-  if (i === 1) {
-    continue loop1;
-  }
-  str = str + i;
+  if (i === 1)
+    continue loop1
+
+  str = str + i
 }
 
-console.log(str);
+console.log(str)
 // expected output: "0234"
 ```
 可实现类似于goto语句的效果
@@ -28,14 +28,14 @@ git commit --allow-empty -m "empty commit"
 ## 网页读取文件
 ```js
 function onChange(event) {
-  var file = event.target.files[0];
-  var reader = new FileReader();
-  reader.onload = function(event) {
+  const file = event.target.files[0]
+  const reader = new FileReader()
+  reader.onload = function (event) {
     // 文件里的文本会在这里被打印出来
     console.log(event.target.result)
-  };
+  }
 
-  reader.readAsText(file);
+  reader.readAsText(file)
 }
 ```
 此方法依赖浏览器的文件读取API来读取文件，并将文件内容赋值给文本框。

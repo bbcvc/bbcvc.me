@@ -9,8 +9,8 @@ const route = useRoute()
 
 <template>
   <div class="prose m-auto mb-8 select-none">
-    <button class="flex gap1 items-center mb2 op30 text-xs"  @click="englishOnly = !englishOnly">
-      <div class="[englishOnly ? 'i-carbon-checkbox-checked' : 'carbon-checkbox']"/>
+    <button class="flex gap1 items-center mb2 op30 text-xs" @click="englishOnly = !englishOnly">
+      <div class="[englishOnly ? 'i-carbon-checkbox-checked' : 'carbon-checkbox']" />
       English Only
     </button>
 

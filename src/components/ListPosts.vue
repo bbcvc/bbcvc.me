@@ -74,7 +74,7 @@ const oRoutes: oPosts[] = router.getRoutes()
         </div>
       </li>
     </app-link>
-    <a class="no-underline list-none" v-if="oRoutes.length > 0">很久以前...</a>
+    <a v-if="oRoutes.length > 0" class="no-underline list-none">很久以前...</a>
     <app-link
       v-for="route in oRoutes" :key="route.path"
       class="item block font-normal mb-6 mt-2 no-underline"

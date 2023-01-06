@@ -2,7 +2,6 @@
 import { useFetch } from '@vueuse/core'
 
 const { isFetching, error, data } = useFetch('https://v1.hitokoto.cn/').get().json()
-
 </script>
 
 <template>

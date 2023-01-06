@@ -6,7 +6,8 @@
     "dev": "vite --port 3333 --open",
     "preview": "vite preview",
     "rss": "esno ./scripts/rss.ts",
-    "redirects": "esno scripts/redirects.ts"
+    "redirects": "esno scripts/redirects.ts",
+    "lint": "eslint . --fix"
   },
   "dependencies": {
     "@vueuse/core": "^9.3.0",
@@ -59,12 +60,12 @@
     "vite-ssg": "^0.20.2",
     "vite-svg-loader": "^3.6.0"
   },
-  "eslintConfig": {
-    "extends": "@antfu"
-  },
   "pnpm": {
     "overrides": {
       "@vueuse/head": "0.7.0"
     }
+  },
+  "eslintConfig": {
+    "extends": "@antfu"
   }
 }

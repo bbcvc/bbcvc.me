@@ -12,7 +12,7 @@ if (isClient) {
 
 <template>
   <div class="">
-    <blockquote class="twitter-tweet" :data-theme="isDark ? 'dark': 'light'">
+    <blockquote class="twitter-tweet" :data-theme="isDark ? 'dark' : 'light'">
       <slot />
     </blockquote>
   </div>
