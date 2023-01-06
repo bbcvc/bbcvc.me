@@ -18,7 +18,7 @@
     "vue-router": "4.1.5"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.27.0",
+    "@antfu/eslint-config": "^0.34.0",
     "@iconify/json": "^2.1.26",
     "@octokit/rest": "^18.12.0",
     "@types/degit": "^2.8.3",

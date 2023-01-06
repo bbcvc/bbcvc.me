@@ -36,8 +36,12 @@ export const createApp = ViteSSG(
     dayjs.extend(LocalizedFormat)
 
     if (isClient) {
-      router.beforeEach(() => { NProgress.start() })
-      router.afterEach(() => { NProgress.done() })
+      router.beforeEach(() => {
+        NProgress.start()
+      })
+      router.afterEach(() => {
+        NProgress.done()
+      })
     }
   },
 )
