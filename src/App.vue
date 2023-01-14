@@ -12,7 +12,11 @@ useHead({
 <template>
   <NavBar />
   <main class="px-7 py-10">
-    <router-view />
+    <Layout class="max-w-[1200px] m-auto">
+      <template #center>
+        <router-view />
+      </template>
+    </Layout>
     <Footer />
   </main>
 </template>
