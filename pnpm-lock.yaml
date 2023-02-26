@@ -35,6 +35,7 @@ specifiers:
   next-sitemap: ^1.6.203
   notion-client: 6.15.6
   notion-utils: 6.15.6
+  pnpm: ^7.25.1
   postcss: ^8.4.20
   preact: ^10.5.15
   prism-themes: 1.9.0
@@ -105,6 +106,7 @@ devDependencies:
   eslint-plugin-promise: 5.2.0_eslint@7.32.0
   eslint-plugin-react: 7.32.2_eslint@7.32.0
   next-sitemap: 1.9.12_next@13.2.1
+  pnpm: 7.28.0
   postcss: 8.4.21
   tailwindcss: 3.2.7
   webpack-bundle-analyzer: 4.8.0
@@ -4815,6 +4817,12 @@ packages:
   /platform/1.3.6:
     resolution: {integrity: sha512-fnWVljUchTro6RiCFvCXBbNhJc2NijN7oIQxbwsyL0buWJPG85v81ehlHI9fXrJsMNgTofEoWIQeClKpgxFLrg==}
     dev: false
+
+  /pnpm/7.28.0:
+    resolution: {integrity: sha512-nbuY07S2519jEjaV9KLjSFmOwh0b6KIViIdc/RCJkgco8SZa2+ikQQe4N3CfNn5By5BH0dKVbZ8Ox1Mw8wItSA==}
+    engines: {node: '>=14.6'}
+    hasBin: true
+    dev: true
 
   /postcss-import/14.1.0_postcss@8.4.21:
     resolution: {integrity: sha512-flwI+Vgm4SElObFVPpTIT7SU7R3qk2L7PyduMcokiaVKuWv9d/U+Gm/QAd8NDLuykTWTkcrjOeD2Pp1rMeBTGw==}
