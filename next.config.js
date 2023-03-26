@@ -11,7 +11,8 @@ module.exports = withBundleAnalyzer({
       'gravatar.com',
       'www.notion.so',
       'avatars.githubusercontent.com',
-      'images.unsplash.com'
+      'images.unsplash.com',
+      'telegraph-image-4y1.pages'
     ]
   },
   // 默认将feed重定向至 /public/rss/feed.xml
@@ -51,6 +52,10 @@ module.exports = withBundleAnalyzer({
         ]
       }
     ]
+  },
+  compiler: {
+    // Enables the styled-components SWC transform
+    styledComponents: true
   },
   webpack: (config, { dev, isServer }) => {
     // Replace React with Preact only in client production build

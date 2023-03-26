@@ -70,8 +70,8 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.23.2",
     "next-sitemap": "^1.6.203",
-    "postcss": "^8.4.20",
     "pnpm": "^7.25.1",
+    "postcss": "^8.4.20",
     "tailwindcss": "^3.2.4",
     "webpack-bundle-analyzer": "^4.5.0"
   },
