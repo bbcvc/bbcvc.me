@@ -53,10 +53,6 @@ module.exports = withBundleAnalyzer({
       }
     ]
   },
-  compiler: {
-    // Enables the styled-components SWC transform
-    styledComponents: true
-  },
   webpack: (config, { dev, isServer }) => {
     // Replace React with Preact only in client production build
     // if (!dev && !isServer) {
