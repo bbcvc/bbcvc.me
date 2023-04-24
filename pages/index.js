@@ -4,6 +4,7 @@ import { getGlobalNotionData } from '@/lib/notion/getNotionData'
 import * as ThemeMap from '@/themes'
 import { useGlobal } from '@/lib/global'
 import { generateRss } from '@/lib/rss'
+import { generateRobotsTxt } from '@/lib/robots.txt'
 const Index = props => {
   const { theme } = useGlobal()
   const ThemeComponents = ThemeMap[theme]
@@ -45,6 +46,9 @@ export async function getStaticProps() {
 
   // 异步生成Feed订阅
   generateRss(props?.latestPosts || [])
+
+  // 生成robotTxt
+  generateRobotsTxt()
 
   return {
     props: {
