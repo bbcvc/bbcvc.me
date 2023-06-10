@@ -8,7 +8,7 @@ import throttle from 'lodash.throttle'
 let wrapperTop = 0
 let windowTop = 0
 let autoScroll = false
-const enableAutoScroll = false // 是否开启自动吸附滚动
+const enableAutoScroll = true // 是否开启自动吸附滚动
 
 /**
  *

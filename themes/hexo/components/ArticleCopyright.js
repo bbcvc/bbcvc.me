@@ -37,5 +37,5 @@ export default function ArticleCopyright () {
         </li>
       </ul>
     </section>
-  );
+  )
 }
