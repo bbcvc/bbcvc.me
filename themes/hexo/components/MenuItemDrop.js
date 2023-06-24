@@ -30,7 +30,7 @@ export const MenuItemDrop = ({ link }) => {
         {hasSubMenu && <ul style={{ backdropFilter: 'blur(3px)' }} className={`${show ? 'visible opacity-100 top-12' : 'invisible opacity-0 top-20'} drop-shadow-md overflow-hidden rounded-md bg-white transition-all duration-300 z-20 absolute block  `}>
             {link.subMenus.map(sLink => {
               return <li key={sLink.id} className='cursor-pointer hover:bg-indigo-300 text-gray-900 hover:text-black tracking-widest transition-all duration-200 dark:border-gray-800  py-1 pr-6 pl-2'>
-                    <Link href={sLink.to}>
+                    <Link target='_black' referrerpolicy='same-origin' href={sLink.to}>
                     <span className='text-sm text-nowrap font-extralight'>{link?.icon && <i className={sLink?.icon} > &nbsp; </i>}{sLink.title}</span>
                     </Link>
                 </li>
